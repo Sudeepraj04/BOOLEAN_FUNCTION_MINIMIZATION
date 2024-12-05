@@ -37,12 +37,25 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Developed by: RegisterNumber:*/
 
+module booleanminimization(a,b,c,d,f1);
+
+input a,b,c,d;
+
+output f1;
+
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+
+endmodule
+
 
 **RTL realization**
+![wave form of boolean minimization ](https://github.com/user-attachments/assets/dfce00ee-0012-42b9-9dcb-3c75378584d7)
 
 **Output:**
 
 **RTL**
+![boolean minimization screen shot](https://github.com/user-attachments/assets/f9275eed-be21-4448-8d6f-9999e0c19a32)
+
 
 **Timing Diagram**
 
